@@ -129,7 +129,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var ball1=[];
-var bg= "sprites/download.jpeg";
+var bg= "download.jpeg";
 var backgroundIMG;
 
 function preload(){
@@ -417,11 +417,11 @@ async function getBackgroundImg(){
     var hour = datetime.slice(11,13);
 	console.log(hour);
     
-    if(hour>=22){
-        bg = "sprites/download.jpeg";
+    if(hour>=06 && hour<=18){
+        bg = "download.jpeg";
     }
     else{
-        bg = "sprites/download.jpeg";
+        bg = "download.jpeg";
     }
 
     backgroundImg = loadImage(bg);
